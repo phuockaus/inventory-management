@@ -1,0 +1,50 @@
+#navbar ul {
+  margin-top: 0;
+  padding-right: 5%;
+  list-style-type: none;
+  background: #333;
+  text-align: center;
+}
+#navbar ul li {
+  color: #f1f1f1;
+  display: inline-table;
+  width: 10%;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  padding: 2px 2px;
+}
+#navbar ul li a {
+  color: #f1f1f1;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+#navbar ul .tabs a:hover {
+  color: #f1f1f1;
+  background: #4d4645;
+  transition: all 0.5s;
+}
+
+#navbar #home {
+  background: #333;
+  height: 40px;
+  width: 20%;
+  position: absolute;
+  /* overflow: auto; */
+}
+
+#home-icon img {
+  height: 38px;
+  float: left;
+}
+
+#home-content {
+  color: #fff;
+  text-decoration: none;
+  line-height: 40px;
+  font-weight: bold;
+  margin-left: 5%;
+  float: left;
+}

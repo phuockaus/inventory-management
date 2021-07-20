@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState, useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import {
     BrowserRouter as Router,
@@ -7,6 +7,7 @@ import {
     Link
   } from "react-router-dom";
 import MAIN from '../main/main';
+
 
 export default class Login extends Component {
     constructor(props){
@@ -19,7 +20,7 @@ export default class Login extends Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-
+    
     handleChange(event){
         this.setState({
             [event.target.name]: event.target.value,
