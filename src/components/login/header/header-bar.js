@@ -12,7 +12,6 @@ function Header() {
           </div>
         </div>
     );
-    // return React.createElement('div', {className: 'header'}, 'Inventory Management');   
 }
 
 export default Header;
