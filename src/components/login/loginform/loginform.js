@@ -1,5 +1,4 @@
-import React, { Component, useState, useEffect} from 'react';
-import { Redirect } from 'react-router-dom';
+import React, { useState } from 'react';
 import './loginform.css';
 
 export default function LoginForm({Login}) {
@@ -7,7 +6,7 @@ export default function LoginForm({Login}) {
 
     const handleSubmit = event => {
         event.preventDefault();
-        Login(details);
+        document.getElementById("login-error").innerHTML = Login(details);
     }
     const handleNameChange = event => {
         setDetails({...details, username: event.target.value});
@@ -15,31 +14,38 @@ export default function LoginForm({Login}) {
     const handlePasswordChange = event => {
         setDetails({...details, password: event.target.value});
     }
+    const handleFocus = () => {
+        document.getElementById("login-error").innerHTML = "";
+    }
     return (
-        <div className="container">
-            <h1 className="title">Login</h1>
+        <div id="login_container">
+            <h1 id="login_title">Login</h1>
+            <div className="blank_space"></div>
             <form onSubmit={handleSubmit}>
-                <div className="item_container">
-                    <label className="item_label" htmlFor="username"><b>Username</b></label>
+                    {/* <label className="item_label" htmlFor="username"><b>Username</b></label> */}
                     <input
+                        className="item_container"
                         type="text"
-                        placeholder="Enter Username"
+                        placeholder="Username"
                         name="username"
                         value={details.name}
                         onChange={handleNameChange}
+                        onFocus={handleFocus}
                         />                
-                </div>
-                <div className="item_container">
-                    <label className="item_label" htmlFor="password"><b>Password</b></label>
+                
+                    {/* <label className="item_label" htmlFor="password"><b>Password</b></label> */}
                     <input
+                        className="item_container"
                         type="password"
-                        placeholder="Enter Password"
+                        placeholder="Password"
                         name="password"
                         value={details.password}
                         onChange={handlePasswordChange}
+                        onFocus={handleFocus}
                         />
-                </div>
-                <input type="submit" value="Login" />
+                
+                <input className="button" type="submit" value="Login" />
+                <div id="login-error"></div>
             </form>
         </div>
     );       

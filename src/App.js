@@ -29,10 +29,12 @@ function App() {
 
   const Login = details => {
     for (let i = 0; i < users.length; i++){
-      if(users[i].username == details.username && users[i].password == details.password){
+      if(users[i].username === details.username && users[i].password === details.password){
         setState(true);
+        return "";
       }
     }
+    return "Invalid Username or Password!";    
   }
     return (
     <Router>
@@ -41,7 +43,7 @@ function App() {
           <Redirect to ='/login' />          
         </Route>
         <Route path = "/login">
-          {state ? <Redirect to="/home"/> : <LoginView Login={Login}/>}
+          {state ? <Redirect to="/home"/> : <LoginView Login={Login} />}
         </Route>
         <Route path = "/home">
           <Navbar />

@@ -1,4 +1,29 @@
 .item-container {
-  border: 1px solid black;
-  margin: 3px auto;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  padding: 20px;
+  margin-top: 15px;
+  display: flex;
+  justify-items: center;
+  font-size: 14px;
+  height: 20px;
+}
+.item-container #test {
+  text-align: center;
+}
+#item-id {
+  width: 80px;
+}
+#item-name {
+  width: 300px;
+}
+#item-category {
+  width: 200px;
+}
+#item-quantity {
+  width: 200px;
+}
+#item-price {
+  width: 160px;
 }
