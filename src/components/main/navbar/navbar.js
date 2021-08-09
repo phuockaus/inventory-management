@@ -3,7 +3,7 @@ import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
 import Storage from "../storage/storage";
 import Import from "../import/import";
 import Export from "../export/export";
-import Report from "../report/report";
+import About from "../about/about";
 import Error from "../error/error";
 import Home from "../home/home";
 import './navbar.css';
@@ -25,11 +25,11 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="tab_menu">
-        <ul>
+        <ul id="tabs-list">
           <li className="tabs"><Link to={`${match.url}/storage`}>Storage</Link></li>
           <li className="tabs"><Link to={`${match.url}/import`}>Import</Link></li>
           <li className="tabs"><Link to={`${match.url}/export`}>Export</Link></li>
-          <li className="tabs"><Link to={`${match.url}/report`}>Report</Link></li>
+          <li className="tabs"><Link to={`${match.url}/about`}>About</Link></li>
         </ul>
           </div>
         <a className="logout_button" href='/'>Logout</a>
@@ -48,8 +48,8 @@ export default function Navbar() {
           <Route path={`${match.path}/export`}>
             <Export />
           </Route>
-          <Route path={`${match.path}/report`}>
-            <Report />
+          <Route path={`${match.path}/about`}>
+            <About />
           </Route>
           <Route path="*">
             <Error />

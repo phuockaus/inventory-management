@@ -1,0 +1,57 @@
+#import-header-form {
+  width: 500px;
+  padding: 3%;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  box-shadow: 0 0 5px grey;
+}
+.import-input {
+  font-weight: bold;
+  margin-left: 20px;
+  padding: 6px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #000;
+  background: #f6f7f9;
+  color: #748194;
+  font-size: 14px;
+}
+#import-input-quantity {
+  height: 18.5px;
+  width: 150px;
+}
+#import-input-id {
+  width: 200px;
+}
+.import-button {
+  font-weight: bold;
+  width: 150px;
+  margin-top: 20px;
+  padding: 6px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #333;
+  color: white;
+  font-size: 14px;
+  height: 40px;
+  cursor: pointer;
+}
+.import-button:hover {
+  background: #a3a3a3;
+  color: #000;
+  transition: all 0.25s;
+}
+#import-error {
+  color: #3b414b;
+  font-size: 12px;
+  /* text-align: center; */
+  padding: 5px 0 0 20px;
+  font-weight: bold;
+}
+#import-button-add {
+  /* float: right; */
+
+  margin-left: 20px;
+}

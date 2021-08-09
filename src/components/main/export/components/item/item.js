@@ -3,14 +3,14 @@ import './item.css';
 
 export default function Item({product}){
     return(        
-        <div className="import-item-container">
-            <div id="import-item-id">
+        <div className="export-item-container">
+            <div id="export-item-id">
                 {product.product_id}
             </div>
-            <div id="import-item-name">
+            <div id="export-item-name">
                 {product.product_name}
             </div>
-            <div id="import-item-quantity">
+            <div id="export-item-quantity">
                 {product.quantity}
             </div>
         </div>        

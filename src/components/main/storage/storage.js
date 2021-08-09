@@ -20,18 +20,21 @@ export default function Storage(){
     if (products){
         const productList = products.map(product => <Item product={product} />);
         return(
-            <div id="storage-container">
-                <h3 id="storage-title">Products List</h3>
-                <div id="storage-header">
-                    <div id="product-id">ID</div>
-                    <div id="product-name">Product Name</div>
-                    <div id="product-category">Category</div>
-                    <div id="product-quantity">Quantity</div>
-                    <div id="product-price">Price</div>
+            <div>
+                <div id="storage-container">
+                    {/* <h3 id="storage-title">Products List</h3> */}
+                    <div id="storage-header">
+                        <div id="product-id">ID</div>
+                        <div id="product-name">Product Name</div>
+                        <div id="product-category">Category</div>
+                        <div id="product-quantity">Quantity</div>
+                        <div id="product-price">Price</div>
+                    </div>
+                    <div id="storage-items">
+                        {productList}
+                    </div>
                 </div>
-                <div id="storage-items">
-                    {productList}
-                </div>
+                <div className="footer"></div>
             </div>
         );
     }

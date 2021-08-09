@@ -1,40 +1,33 @@
-#login_container {
-  margin: 5% 35%;
-  width: 300px;
-  height: 400px;
+#export-header-form {
+  width: 500px;
   padding: 3%;
   background-color: #fff;
   color: #000;
-  border-radius: 15px;
+  border-radius: 5px;
   box-shadow: 0 0 5px grey;
 }
-#login_title {
-  color: #3b414b;
-  font-size: 30px;
-  text-align: center;
-}
-.blank_space {
-  width: auto;
-  height: 25px;
-}
-.item_container {
+.export-input {
   font-weight: bold;
-  width: 200px;
-  margin: 0 35px 20px;
-  height: 35px;
+  margin-left: 20px;
   padding: 6px 15px;
   border-radius: 5px;
   outline: none;
-  border: none;
+  border: 1px solid #000;
   background: #f6f7f9;
   color: #748194;
   font-size: 14px;
 }
-.button {
+#export-input-quantity {
+  height: 18.5px;
+  width: 150px;
+}
+#export-input-id {
+  width: 200px;
+}
+.export-button {
   font-weight: bold;
-  width: 230px;
-  margin: 0 35px 20px;
-  height: 45px;
+  width: 150px;
+  margin-top: 20px;
   padding: 6px 15px;
   border-radius: 5px;
   outline: none;
@@ -42,16 +35,23 @@
   background: #333;
   color: white;
   font-size: 14px;
+  height: 40px;
   cursor: pointer;
 }
-.button:hover {
+.export-button:hover {
   background: #a3a3a3;
   color: #000;
   transition: all 0.25s;
 }
-#login-error {
+#export-error {
   color: #3b414b;
   font-size: 12px;
-  text-align: center;
+  /* text-align: center; */
+  padding: 5px 0 0 20px;
   font-weight: bold;
+}
+#export-button-add {
+  /* float: right; */
+
+  margin-left: 20px;
 }

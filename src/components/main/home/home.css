@@ -1,0 +1,92 @@
+#home-item-about {
+  height: 300px;
+  text-align: center;
+  margin: 5% 2%;
+  background-color: rgb(245, 245, 245);
+  padding-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px grey;
+  /* background-image: url("https://thumbs.dreamstime.com/b/rocky-heart-dark-background-volcanic-rocks-heart-shaped-white-stone-dark-volcanic-rocks-background-copy-space-seen-192279685.jpg");
+  background-size: 100%; */
+}
+#home-item-about h1 {
+  /* font-size: 60px; */
+  font-weight: bold;
+  color: rgb(49, 49, 49);
+}
+#home-item-about p {
+  padding-top: 20px;
+  font-size: 30px;
+  color: rgba(49, 49, 49, 0.6);
+  font-weight: 200;
+  word-spacing: 1px;
+}
+#home-item-about a {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgba(49, 49, 49, 1);
+  margin: 0 auto;
+  display: block;
+  font-weight: bold;
+  border: 2px solid rgb(53, 53, 53);
+  width: 300px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  border-radius: 7px;
+}
+#home-item-about a:hover {
+  /* background-color: rgb(180, 180, 180); */
+  transition: all 0.3s;
+  background-color: rgb(219, 219, 219);
+  /* color: aliceblue; */
+}
+.icons {
+  width: 48px;
+  height: auto;
+}
+.home-item-container {
+  width: 90%;
+  height: 400px;
+  margin: 50px 5%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.home-item {
+  width: 33%;
+  height: 100%;
+  text-align: center;
+}
+.home-item p {
+  /* padding-top: 20px; */
+  color: rgba(0, 0, 0, 0.6);
+  display: block;
+  line-height: 180%;
+  font-size: 14px;
+}
+.home-item a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  font-weight: 700;
+  width: 45%;
+  height: 55px;
+  line-height: 55px;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  display: block;
+  border-radius: 5px;
+  margin: 40px auto;
+}
+.home-item a:hover {
+  /* background-color: rgb(180, 180, 180); */
+  transition: all 0.3s;
+  background-color: rgb(219, 219, 219);
+  /* color: aliceblue; */
+}
+.footer {
+  background-color: #333;
+  height: 40px;
+  width: auto;
+}

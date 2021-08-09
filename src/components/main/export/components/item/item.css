@@ -1,19 +1,19 @@
-.import-item-container {
+.export-item-container {
   border: 2px solid rgb(228, 228, 228);
   border-radius: 30px;
   display: flex;
   font-weight: 600;
   margin-top: 5px;
 }
-#import-item-id {
+#export-item-id {
   padding-left: 20px;
   /* float: left; */
   width: 50px;
 }
-#import-item-name {
+#export-item-name {
   width: 300px;
 }
-#import-item-quantity {
+#export-item-quantity {
   padding-right: 20px;
   width: 110px;
 }
